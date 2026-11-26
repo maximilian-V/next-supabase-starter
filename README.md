@@ -119,6 +119,8 @@ npm run db:reset
 npm run db:types
 ```
 
+When a pull request changes a migration, [RattleCheck](.github/workflows/rattlecheck.yml) compares its SQL permissions with the base branch and flags new high or critical findings. The check runs without Supabase credentials.
+
 ### Adding UI Components
 
 ```bash
